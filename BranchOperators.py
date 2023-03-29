@@ -1,4 +1,19 @@
+if __name__ == '__main__':
+    try:
+        value = float(input("Enter a value: "))
+        choose = input("Enter a choice met or mil: ")
 
-# Homework Course: "Introduction to the language Python programming
-# Module 2: Branching operators, loops, exceptions
-# Topic: Branching operators. Part 1
+        if choose == "met":
+            meters = value * 1609.34
+            print("Meters: ", meters)
+
+        elif choose == "mil":
+            miles = value / 1609.34
+            print("Miles: ", miles)
+        else:
+            print("Invalid choice")
+
+    except Exception :
+        print("Invalid value")
+
+# Path: BranchOperators.py
