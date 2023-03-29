@@ -14,14 +14,19 @@ if __name__ == "__main__":
             if num < min_num:
                 min_num = num
 
-        choice = input("Enter 'max' or 'min': ")
+        choice = input("Enter 'max' or 'min' or 'avg': ")
+
+        sum = 0
 
         if choice == 'max':
             print("The maximum number is", max_num)
         elif choice == 'min':
             print("The minimum number is", min_num)
+        elif choice == "avg":
+            mean = (num1 + num2 + num3) / 3
+            print("The avg number is", mean)
         else:
-            print("Invalid choice. Please enter 'max' or 'min'.")
+            print("Invalid choice. Please enter 'max' or 'min' or 'avg'.")
 
 #       if choice == 1:
 #           print("Max number is: ", max(num1, num2, num3))
