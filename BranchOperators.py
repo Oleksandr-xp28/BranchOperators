@@ -7,7 +7,7 @@ if __name__ == "__main__":
         # initialize variables for max and min
         max_num = num1
         min_num = num1
-
+        # list
         for num in [num1, num2, num3]:
             if num > max_num:
                 max_num = num
